@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0em;
+            padding: 0em;
+        }
+
+        .heading {
+            background-color: yellow;
+            max-width: 100%;
+            text-align: center;
+            height: 10vh;
+            padding: 0.5em;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: black;
+        }
+        .row{
+            display:flex;
+            flex-wrap:wrap
+        }
+        .side{
+            flex:30%;
+            background-color: #f1f1f1;
+            padding:20px;
+        }
+        .main{
+            flex:70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .footer{
+            text-align: center;
+            background-color: #333;
+            padding:20px;
+            color:white;
+        }
+
+        @media screen and (max-width:700px){
+            .row, .navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h4>Resize the browser window to see the responsive effect</h4>
+    </div>
+    <div class="header">
+        <h2>My Website</h2>
+        <h4>With a <b>flexible</b> layout</h4>
+    </div>
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+   <div class="row">
+       <div class="side">
+           <h2>About me</h2>
+           <h4>Photo of me</h4>
+           <img src="#">
+           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+           <h2>More Text</h2>
+           <p>Lorem ipsum dolor sit ame.</p>
+           <img src="#">
+           <img src="#">
+           <img src="#">
+       </div>
+       <div class="main">
+           <h2>TITLE HEADING</h2>
+           <p>Title description, Dec 7, 2017</p>
+           <img src="#">
+           <p>Some text..</p>
+           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>TITLE HEADING</h2>
+            <p>Title description, Sep 2, 2017</p>
+            <img src="#">
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco.</p>
+       </div>
+   </div>
+
+   <div class="footer">
+       Footer
+   </div>
+
+</body>
+
+</html>
